@@ -1,0 +1,8 @@
+*.pyc
+__pycache__/
+venv/
+.env
+*.html
+*.md
+!README.md
+.DS_Store

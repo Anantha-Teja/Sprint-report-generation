@@ -1,0 +1,56 @@
+# ============================================================================
+# SPRINT REPORT CONFIGURATION
+# ============================================================================
+# Complete this configuration and run: python3 generate_api_report.py
+# The script will fetch issues from Jira and generate a formatted report
+
+# ============================================================================
+# Export tokens
+# ============================================================================
+#
+# export JIRA_EMAIL="mail id”
+# export JIRA_API_TOKEN=""
+
+
+# ============================================================================
+
+# ============================================================================
+# SPRINT INFORMATION
+# ============================================================================
+sprint_info:
+  sprint_number: 1
+  sprint_name: "Sprint 1"
+  start_date: "19th November 2025"
+  end_date: "3rd December 2025"
+  team_name: "PIE-CCP Kubernetes"
+
+# ============================================================================
+# JIRA CONFIGURATION
+# ============================================================================
+jira:
+  # Your Jira server URL
+  server_url: "https://hpe.atlassian.net"
+  
+  # Jira Issue Navigator URL - Copy from your browser after filtering issues
+  # Example: https://hpe.atlassian.net/issues/?jql=issueKey%20in%20(GLCP-123,GLCP-456)
+  issue_navigator_url: https://hpe.atlassian.net/issues/?jql=issueKey%20in%20(GLCP-314348%2CGLCP-314350%2CGLCP-314351%2CGLCP-314352%2CGLCP-314357%2CGLCP-314369%2CGLCP-314370%2CGLCP-314417%2CGLCP-314438%2CGLCP-314446%2CGLCP-314447%2CGLCP-314450%2CGLCP-314461%2CGLCP-314464%2CGLCP-314479%2CGLCP-316355%2CGLCP-316360%2CGLCP-321936%2CGLCP-322115%2CGLCP-323219%2CGLCP-323333%2CGLCP-324032)
+
+# ============================================================================
+# KUDOS/APPRECIATION
+# ============================================================================
+kudos:
+  - "Kudos to the entire PIE-CCP Kubernetes team for their outstanding collaboration and dedication."
+  - "Kudos to naman Kumar and Srivatsan R for their work on greenword issues during late hours."
+
+# ============================================================================
+# METRICS
+# ============================================================================
+metrics:
+  story_points_completed: 0
+  pr_reviews_count: 10
+
+# ============================================================================
+# OUTPUT
+# ============================================================================
+output:
+  report_file: "sprint_report-test.md"
