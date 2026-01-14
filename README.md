@@ -20,4 +20,6 @@
 ```
   pip install -r requirements.txt
 ```
+### Dont forget to fill the config,yaml file before running 
+
 # Run ``` python3 generate_api_report.py ```
