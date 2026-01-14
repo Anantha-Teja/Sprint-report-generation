@@ -1,12 +1,14 @@
 ### Export Jira Credentails and email.
-
-# export JIRA_EMAIL="mail id”
-# export JIRA_API_TOKEN=""
+```
+ export JIRA_EMAIL="mail id”
+ export JIRA_API_TOKEN=""
+``` 
 
 ### Should have python installed
 # Run to create a virtual environment
 
-```python -m venv myenv
+```
+ python -m venv myenv
 ```
 
  # To activate the virtual env
