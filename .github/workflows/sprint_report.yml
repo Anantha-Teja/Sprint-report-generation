@@ -3,10 +3,9 @@ name: Sprint Report Generation
 on:
   push:
     branches:
-      - '**'  # Run on all branches
-  pull_request:
-  schedule:
-    - cron: '0 9 * * 1'
+      - main
+      - '*-report'
+      - '*report'
   workflow_dispatch:
 
 jobs:
@@ -32,6 +31,11 @@ jobs:
           JIRA_EMAIL: ${{ secrets.JIRA_EMAIL }}
           JIRA_API_TOKEN: ${{ secrets.JIRA_API_TOKEN }}
         run: python3 generate_api_report.py
+      
+      - name: Delete Previous Artifacts
+        uses: geekyeggo/delete-artifact@v2
+        with:
+          name: sprint-reports
       
       - name: Upload Report Artifact
         if: always()
