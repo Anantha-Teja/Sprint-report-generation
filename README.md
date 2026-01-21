@@ -8,7 +8,7 @@
 # Run to create a virtual environment
 
 ```
- python -m venv myenv
+ python3 -m venv myenv
 ```
 
  # To activate the virtual env
