@@ -9,6 +9,12 @@ import sys
 import requests
 from typing import Dict, List, Optional
 import logging
+from pathlib import Path
+from dotenv import load_dotenv
+
+# Load .env file from the script's directory
+env_path = Path(__file__).parent / '.env'
+load_dotenv(dotenv_path=env_path)
 
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 logger = logging.getLogger(__name__)
