@@ -1,6 +1,6 @@
 ### Export Jira Credentails and email.
 ```
- export JIRA_EMAIL="mail id”
+ export JIRA_EMAIL="mail id"
  export JIRA_API_TOKEN=""
 ``` 
 
