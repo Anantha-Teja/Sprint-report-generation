@@ -36,6 +36,7 @@ jobs:
         uses: geekyeggo/delete-artifact@v2
         with:
           name: sprint-reports
+          failOnError: false
       
       - name: Upload Report Artifact
         if: always()
